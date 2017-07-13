@@ -5,7 +5,6 @@
 
 
 
-
 // 1: Show me how to calculate the average price of all items.
 function question1 () {
 
@@ -46,7 +45,7 @@ function question4 () {
     if(data[i].materials.includes('wood')){
       console.log(data[i].title)
     }
-    }
+  }
 }
 
 
@@ -57,6 +56,7 @@ function question5 () {
     if (data[i].materials.length >= 8){
       console.log(data[i].materials )
       console.log(data[i].title);
+      console.log(data[i].materials.length);
     }
   }
 }
@@ -65,5 +65,9 @@ function question5 () {
 // 6: How many items were made by their sellers?
 // Answer:
 function question6 () {
-  // Answer:
+  for (i=0; i < data.length; i++){
+    if (data[i].who_made === 'i_did'){
+        console.log(data[i].who_made.length)
+    }
+  }
 }
